@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio Button Example</title>
+<style>
+h1 {
+  text-align: center;
+}
+
+input[type="radio"] {
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 200px;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+<h1>ACII ART WEB </h1>
+
+
+<form action="/ascii-art" method="post">
+  <select id="banners" name="typeBanner">
+    <option> standard </option>
+    <option> shadow </option>
+    <option> thinkertoy </option>
+  </select>
+  <textarea id="text" name="text" maxlength="200"></textarea>
+  <input type="submit" value="Submit">
+</form>
+<br><br><br>
+</body>
+</html>
