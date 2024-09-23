@@ -33,7 +33,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	res := handleE{}
 	if r.Method == http.MethodGet {
 		if r.URL.Path != "/" {
-		fmt.Println("yy")
 			res.Code = 404
 			res.Status = "not found" 
 			ErrorHandler(w,r,&res)
@@ -71,7 +70,6 @@ func asciiHandler(w http.ResponseWriter, r *http.Request) {
 			ErrorHandler(w,r,&res)
 			return 
 		}
-	fmt.Println("process the asccii chars")
 	var text string 
 	text = r.FormValue("text")
 	for _, g:= range text {

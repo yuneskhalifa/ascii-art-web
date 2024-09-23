@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Radio Button Example</title>
+<title>ascii art web project</title>
 <style>
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+/* Style for the header */
 h1 {
-  text-align: center;
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-input[type="radio"] {
-  margin: 10px 0;
+/* Style for the form */
+form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
 }
 
+/* Style for the select dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Style for the submit button */
 input[type="submit"] {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
 }
 
-input[type="text"] {
-  width: 200px;
-  margin: 10px 0;
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
 </style>
 </head>
 <body>
